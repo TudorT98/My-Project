@@ -1,0 +1,16 @@
+<div id="ListComp2" style="display: none">
+<h1>Process List</h1>
+<ol>
+  <li *ngFor="let process of processes.list"><span (click)="onSelect(process)" (click)="displayDetails(selectedProcess)"> {{process.name}} : {{process.progress}} </span></li>
+</ol>
+  <div id="button3">
+    <label>Process :
+      <input #processName />
+    </label>
+    <button (click)="add(processName.value); processName.value=''">
+      Add
+    </button>
+  </div>
+  <span id="plus" (click)="displayButton()"> &#x2b; </span>
+</div>
+<app-process-details *ngIf="selectedProcess" [process]="selectedProcess"></app-process-details>

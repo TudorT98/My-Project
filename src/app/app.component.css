@@ -1,0 +1,76 @@
+
+span.dropdown
+{
+  border-style: none;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #305b7b;
+  cursor: pointer;
+  font-family: verdana;
+  font-size: 150%;
+  color: white;
+  border-radius: 3px;
+}
+span.dropdown:hover
+{
+  background-color: #183043;
+  transition: 1s;
+}
+div
+{
+  background-color: #305b7b;
+  border-width: medium;
+  border-style: groove;
+  border-radius: 5px;
+  border-top: none;
+  padding-top: 30px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+
+}
+img
+{
+  float: right;
+  width: 90px;
+  height: 90px;
+  margin-top: 0px;
+}
+img:hover
+{
+  background-color: #183043;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown-content {
+  display: none;
+  background-color: #8fa7cd;
+  position: absolute;
+  font-size: 80%;
+}
+.dropdown-content:hover
+{
+  position: absolute;
+  display: inline-block;
+  font-size: 80%;
+}
+.dropdown
+{
+  display: inline-block;
+}
+#ProjList
+{
+  border-style: none;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #305b7b;
+  cursor: pointer;
+  font-family: verdana;
+  font-size: 150%;
+  color: white;
+}

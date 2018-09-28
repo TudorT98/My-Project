@@ -1,0 +1,28 @@
+<div>
+  <span class="dropdown">
+    <span (click)="showProjectList()" (click)="selectProjectView()" class="ProjList">Projects</span>
+    <div class="dropdown-content">
+      <app-projects *ngIf="projects"></app-projects>
+    </div>
+  </span>
+  <span class="dropdown">
+    <span (click)="showProcessList()" (click)="selectProcessView()" class="ProjList" >Processes</span>
+    <div class="dropdown-content">
+      <app-processes *ngIf="processes"></app-processes>
+    </div>
+  </span>
+  <span class="dropdown">
+    <span (click)="showTasksList()" (click)="selectTaskView()" class="ProjList">Tasks</span>
+    <div class="dropdown-content">
+      <app-tasks *ngIf="tasks"></app-tasks>
+    </div>
+  </span>
+  <img src="Images\ness-logo-color-rgb-transparent-bg.png" alt="Image not displayed">
+</div>
+
+
+<app-project-list *ngIf="projects"></app-project-list>
+
+<app-process-list *ngIf="processes"></app-process-list>
+
+<app-task-list *ngIf="tasks"></app-task-list>

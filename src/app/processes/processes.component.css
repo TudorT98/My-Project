@@ -1,0 +1,9 @@
+li:hover
+{
+  background-color: #5d6d90;
+  transition: 1s;
+  text-align: left;
+  border-style: groove;
+  padding-right: 150px;
+}
+

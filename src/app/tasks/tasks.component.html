@@ -1,0 +1,3 @@
+<ul *ngIf="tasks">
+  <li *ngFor="let task of tasks.list"><span>{{task.name}} : {{task.progress}}<hr></span></li>
+</ul>

@@ -1,0 +1,16 @@
+<div id="ListComp3" style="display: none">
+  <h1>Task List</h1>
+<ul *ngIf="tasks">
+  <li *ngFor="let task of tasks.list" ><span (click)="onSelect(task)" (click)="displayDetails(selectedTask)"> {{task.name}} : {{task.progress}}</span></li>
+</ul>
+  <div id="button2">
+    <label>Task :
+      <input #TaskName />
+    </label>
+    <button (click)="add(TaskName.value); TaskName.value=''">
+      Add
+    </button>
+  </div>
+  <span id="plus" (click)="displayButton()"> &#x2b; </span>
+</div>
+<app-task-detail *ngIf="selectedTask" [task]="selectedTask"></app-task-detail>

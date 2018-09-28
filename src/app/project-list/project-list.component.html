@@ -1,0 +1,17 @@
+<div id="ListComp" style="display: none">
+<h1>Project List</h1>
+<ul *ngIf="projects">
+  <li *ngFor="let project of projects.list"><span (click)="onSelect(project)" (click)="displayDetails(selectedProject)" id="list">{{project.name}} : {{project.progress}} </span> <button id="minus">&minus;</button></li>
+</ul>
+  <div id="button">
+    <label>Project :
+      <input #ProjectName />
+    </label>
+    <button (click)="add(ProjectName.value); ProjectName.value=''">
+      Add
+    </button>
+  </div>
+  <span id="plus" (click)="displayButton()"> &#x2b; </span>
+</div>
+<app-project-detail *ngIf="selectedProject" [project]="selectedProject"></app-project-detail>
+

@@ -1,0 +1,94 @@
+#minus
+{
+  margin-left:0px;
+  width: 35px;
+  height: 25px;
+  display: inline-block;
+}
+#minus:hover
+{
+  background-color: rgba(140,29,33,0.83);
+  width: 40px;
+  height: 30px;
+  transition: 0.3s;
+}
+#list
+{
+  font-size: 20px;
+  font-family: Verdana;
+  border-style: groove;
+  background-color: rgba(150,150,225,0.32);
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  display: block;
+  margin-right: 2000px;
+  margin-bottom: 10px;
+  margin-left: -35px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  opacity: 50%;
+}
+#list:hover
+{
+  background-color: #305b7b;
+  transition: 0.7s;
+  padding-bottom: 15px;
+  color: white;
+  margin-right: 1990px;
+}
+h1
+{
+  text-align: left;
+  margin-left: 100px;
+  font-family: Arial;
+}
+label
+{
+  font-size: 170%;
+}
+button
+{
+  font-size: 120%;
+}
+button:hover
+{
+  background-color: rgba(68,140,50,0.83);
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+  font-size: 140%;
+}
+input
+{
+  font-size: 72%;
+}
+#button
+{
+  border-style: none;
+  margin-right: 1980px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#plus
+{
+  border-style: groove;
+  background-color: rgba(150,150,225,0.32);
+  cursor: pointer;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-width: thin;
+  margin-left: 140px;
+}
+#plus:hover
+{
+  background-color: rgba(68,140,50,0.83);
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+  font-size: 30px
+
+}
